@@ -1,5 +1,5 @@
 class Translation(object):
-    START_TEXT = """<b>Hello 👋, This Is An 𝗔𝗣𝗜 𝗜𝗗 & 𝗛𝗔𝗦𝗛 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗢𝗥 𝗕𝗢𝗧,\n\nI Can Help You Get Your Telegram API ID & HASH, Make Sure You Read Terms & Conditions Of Running This Bot.\n\nEnter Your Telegram Number To Get Thr APP-ID From my.telegram.org\n\nPress /start At Any Stage To Re-Enter Your Details</b>"""
+    START_TEXT = """<b>Hello 👋, This Is An 𝗔𝗣𝗜 𝗜𝗗 & 𝗛𝗔𝗦𝗛 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗢𝗥 𝗕𝗢𝗧,\n\nI Can Help You Get Your Telegram API ID & HASH, Make Sure You Read Terms & Conditions Of Running This Bot.\n\nEnter Your Telegram Number (Including Country Code For Example +16374826473) To Get The APP-ID From my.telegram.org\n\nPress /start At Any Stage To Re-Enter Your Details</b>"""
     AFTER_RECVD_CODE_TEXT = """I see!
 now please send the Telegram code that you received from Telegram!
 
