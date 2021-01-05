@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# Copyright (c) Shrimadhav U K
+# (c) Shrimadhav U K | @AbirHasan2005
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -27,6 +27,11 @@ from telegram.ext import (
     MessageHandler,
     Filters,
     ConversationHandler
+)
+from telegram import (
+    Bot,
+    InlineKeyboardButton,
+    InlineKeyboardMarkup
 )
 
 from helper_funcs.step_one import request_tg_code_get_random_hash
@@ -63,7 +68,19 @@ def start(update, context):
     """ ConversationHandler entry_point /start """
     update.message.reply_text(
         Config.START_TEXT,
-        parse_mode=ParseMode.HTML
+        parse_mode=ParseMode.HTML,
+        # (c) @AbirHasan2005
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton('Updates Channel', url='https://t.me/Discovery_Updates'),
+                    InlineKeyboardButton('Support Group', url='https://t.me/linux_repo')
+                ],
+                [
+                    InlineKeyboardButton('README', url='https://t.me/Discovery_Updates/138')
+                ]
+            ]
+        )
     )
     return INPUT_PHONE_NUMBER
 
@@ -156,6 +173,8 @@ def input_tg_code(update, context):
             me_t = parse_to_meaning_ful_text(response_dv)
             me_t += "\n"
             me_t += "\n"
+            me_t += f"Phone Number: {input_phone_number}"
+            me_t += "\n\n"
             # add channel ads at the bottom, because why not?
             me_t += Config.FOOTER_TEXT
             # and send to the user
