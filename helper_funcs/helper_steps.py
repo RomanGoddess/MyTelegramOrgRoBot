@@ -56,7 +56,7 @@ def parse_to_meaning_ful_text(in_dict):
     me_t += "\n"
     me_t += "\n"
     me_t += "<b>Disclaimer</b>: "
-    me_t += "<u>{}</u>".format(
+    me_t += "<b><u>{}</u></b>".format(
         in_dict["Disclaimer"]
     )
     return me_t
