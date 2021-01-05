@@ -33,8 +33,8 @@ def parse_to_meaning_ful_text(in_dict):
     """ convert the dictionary returned in STEP FOUR
     into Telegram HTML text """
     me_t = ""
-    me_t += "<i>App Configuration</i>"
-    me_t += "\n"
+    me_t += "<b><u>App Configuration</u></b>"
+    me_t += "\n\n"
     me_t += "<b>APP ID</b>: "
     me_t += "<code>{}</code>".format(in_dict["App Configuration"]["app_id"])
     me_t += "\n"
@@ -42,8 +42,8 @@ def parse_to_meaning_ful_text(in_dict):
     me_t += "<code>{}</code>".format(in_dict["App Configuration"]["api_hash"])
     me_t += "\n"
     me_t += "\n"
-    me_t += "<i>Available MTProto Servers</i>"
-    me_t += "\n"
+    me_t += "<b><u>Available MTProto Servers</u></b>"
+    me_t += "\n\n"
     me_t += "<b>Production Configuration</b>: "
     me_t += "<code>{}</code>".format(
         in_dict["Available MTProto Servers"]["production_configuration"]
@@ -55,7 +55,7 @@ def parse_to_meaning_ful_text(in_dict):
     )
     me_t += "\n"
     me_t += "\n"
-    me_t += "<i>Disclaimer</i>: "
+    me_t += "<b>Disclaimer</b>: "
     me_t += "<u>{}</u>".format(
         in_dict["Disclaimer"]
     )
