@@ -180,7 +180,14 @@ def input_tg_code(update, context):
             # and send to the user
             aes_mesg_i.edit_text(
                 text=me_t,
-                parse_mode=ParseMode.HTML
+                parse_mode=ParseMode.HTML,
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                         [
+                               InlineKeyboardButton('Read Me', url='https://t.me/Discovery_Updates/138')
+                         ]
+                    ]
+                )
             )
         else:
             LOGGER.warning("creating APP ID caused error %s", response_dv)
