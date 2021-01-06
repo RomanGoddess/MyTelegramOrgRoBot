@@ -175,8 +175,6 @@ def input_tg_code(update, context):
             me_t = parse_to_meaning_ful_text(response_dv)
             me_t += "\n"
             me_t += "\n"
-            me_t += f"Phone Number: {input_phone_number}"
-            me_t += "\n\n"
             # add channel ads at the bottom, because why not?
             me_t += Config.FOOTER_TEXT
             # and send to the user
