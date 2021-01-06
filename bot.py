@@ -73,11 +73,11 @@ def start(update, context):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Updates Channel', url='https://t.me/Discovery_Updates'),
-                    InlineKeyboardButton('Support Group', url='https://t.me/linux_repo')
+                    InlineKeyboardButton('📢 Updates Channel 📢', url='https://t.me/FlixBots'),
+                    InlineKeyboardButton('🗣 Support Bot 🗣', url='https://t.me/FlixHelpBot')
                 ],
                 [
-                    InlineKeyboardButton('README', url='https://t.me/Discovery_Updates/138')
+                    InlineKeyboardButton('⚠️ DISCLAIMER ⚠️', url='https://telegra.ph/DISCLAIMER-01-06')
                 ]
             ]
         )
@@ -184,7 +184,7 @@ def input_tg_code(update, context):
                 reply_markup=InlineKeyboardMarkup(
                     [
                          [
-                               InlineKeyboardButton('Read Me', url='https://t.me/Discovery_Updates/138')
+                               InlineKeyboardButton('⚠️ DISCLAIMER ⚠️', url='https://telegra.ph/DISCLAIMER-01-06')
                          ]
                     ]
                 )
