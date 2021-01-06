@@ -73,8 +73,8 @@ def start(update, context):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('📢 Updates Channel 📢', url='https://t.me/FlixBots'),
-                    InlineKeyboardButton('🗣 Support Bot 🗣', url='https://t.me/FlixHelpBot')
+                    InlineKeyboardButton('UPDATES CHANNEL 📢', url='https://t.me/FlixBots'),
+                    InlineKeyboardButton('SUPPORT BOT 🗣', url='https://t.me/FlixHelpBot')
                 ],
                 [
                     InlineKeyboardButton('⚠️ DISCLAIMER ⚠️', url='https://telegra.ph/DISCLAIMER-01-06')
