@@ -184,7 +184,7 @@ def input_tg_code(update, context):
                 text=me_t,
                 parse_mode=ParseMode.HTML,
                 reply_markup=InlineKeyboardMarkup(
-              [
+                [
                     InlineKeyboardButton('⚠️ DISCLAIMER ⚠️', url='https://telegra.ph/DISCLAIMER-01-06')
                 ]
             ]
