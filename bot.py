@@ -182,6 +182,8 @@ def input_tg_code(update, context):
             # and send to the user
             aes_mesg_i.edit_text(
                 text=me_t,
+                parse_mode=ParseMode.HTML
+            )
         else:
             LOGGER.warning("creating APP ID caused error %s", response_dv)
             aes_mesg_i.edit_text(Config.ERRED_PAGE)
