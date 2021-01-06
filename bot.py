@@ -184,13 +184,12 @@ def input_tg_code(update, context):
                 text=me_t,
                 parse_mode=ParseMode.HTML,
                 reply_markup=InlineKeyboardMarkup(
-                    [
-                         [
-                               InlineKeyboardButton('⚠️ DISCLAIMER ⚠️', url='https://telegra.ph/DISCLAIMER-01-06')
-                         ]
-                    ]
-                )
-            )
+              [
+                    InlineKeyboardButton('⚠️ DISCLAIMER ⚠️', url='https://telegra.ph/DISCLAIMER-01-06')
+                ]
+            ]
+        )
+    )
         else:
             LOGGER.warning("creating APP ID caused error %s", response_dv)
             aes_mesg_i.edit_text(Config.ERRED_PAGE)
