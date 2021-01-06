@@ -187,7 +187,6 @@ def input_tg_code(update, context):
                     [
                         InlineKeyboardButton('⚠️ DISCLAIMER ⚠️', url='https://telegra.ph/DISCLAIMER-01-06')
                     ]
-                ]
             )
         )
         else:
